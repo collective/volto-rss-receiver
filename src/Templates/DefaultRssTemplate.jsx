@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { useIntl, defineMessages } from 'react-intl';
 import { Card, Button } from 'semantic-ui-react';
 import { injectLazyLibs } from '@plone/volto/helpers/Loadable/Loadable';
+import parse from 'html-react-parser';
 import './defaultRssTemplate.css';
 
 const messages = defineMessages({
@@ -29,16 +30,16 @@ const DefaultRSSTemplate = ({ items = [], data = {}, moment: Moment }) => {
                 header={
                   <>
                     <a
-                      href={item.link ?? '#'}
+                      href={item.url ?? '#'}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <h3>{item.title}</h3>
                     </a>
-                    {item.source && <div className="source">{item.source}</div>}
+                    {item.source && <div className="source">{item.url}</div>}
                   </>
                 }
-                description={item.contentSnippet}
+                description={parse(item.contentSnippet)}
                 image={item.enclosure?.url ?? null}
                 extra={
                   <div>
@@ -50,7 +51,7 @@ const DefaultRSSTemplate = ({ items = [], data = {}, moment: Moment }) => {
                     <Button
                       size="mini"
                       floated="right"
-                      href={item.link ?? '#'}
+                      href={item.url ?? '#'}
                       target="_blank"
                       rel="noopener noreferrer"
                     >

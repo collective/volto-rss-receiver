@@ -16,6 +16,7 @@
     "@plone/volto": ">=16.0.0-alpha.38"
   },
   "dependencies": {
+    "html-react-parser": "5.1.15",
     "rss-parser": "3.7.5"
   },
   "scripts": {
