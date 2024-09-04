@@ -1,6 +1,6 @@
-# Volto RSS Block
+# Volto RSS Receiver
 
-RSS block for [Volto](https://github.com/plone/volto).
+RSS reciever for [Volto](https://github.com/plone/volto).
 
 From version 2.1.0 you can aggregate more than one RSS feed.
 
@@ -15,7 +15,7 @@ See [redturtle.rssservice](https://github.com/RedTurtle/redturtle.rssservice).
 >
 > If you're using Volto < 16, then use v2.3.2.
 
-> If you're usign volto-rss-block > 2.0.0., the use redturtle.rssservice >= 0.1.1
+> If you're usign volto-rss-receiver > 2.0.0., the use redturtle.rssservice >= 0.1.1
 
 Load this addon (see <https://docs.voltocms.com/addons/#configuring-a-volto-project-to-use-an-addon>).
 
@@ -24,7 +24,7 @@ You can add custom templates like this:
 ```javascript
 // src/config.js
 
-import { rssBlock as customRssBlock } from 'volto-rss-block';
+import { rssBlock as customRssBlock } from 'volto-rss-receiver';
 
 const rssBlock = {
   ...customRssBlock,

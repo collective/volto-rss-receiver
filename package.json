@@ -1,12 +1,12 @@
 {
-  "name": "volto-rss-block",
+  "name": "volto-rss-receiver",
   "version": "3.0.0",
-  "description": "Volto block that shows an RSS feed",
+  "description": "Volto addon that shows an RSS feed",
   "main": "src/index.js",
-  "repository": "https://github.com/RedTurtle/volto-rss-block",
-  "bugs": "https://github.com/RedTurtle/volto-rss-block/issues",
-  "author": "RedTurtle Technology",
-  "homepage": "https://github.com/RedTurtle/volto-rss-block#readme",
+  "repository": "https://github.com/collective/volto-rss-receiver",
+  "bugs": "https://github.com/collective/volto-rss-receiver/issues",
+  "author": "collective/volto-rss-receiver",
+  "homepage": "https://github.com/collective/volto-rss-receiver#readme",
   "license": "MIT",
   "devDependencies": {
     "@plone/scripts": "^2.0.0",

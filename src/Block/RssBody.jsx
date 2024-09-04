@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import { useSelector, useDispatch } from 'react-redux';
 import config from '@plone/volto/registry';
-import { getRSSMixerData } from 'volto-rss-block';
+import { getRSSMixerData } from 'volto-rss-receiver';
 
 const RssBody = ({ block, data, isEditMode, pathname }) => {
   const dispatch = useDispatch();
