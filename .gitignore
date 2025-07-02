@@ -81,3 +81,5 @@ Session.vim
 *~
 # auto-generated tag files
 tags
+temp_auto_push.bat
+temp_interactive_push.bat
